@@ -1,0 +1,146 @@
+header, section, footer, aside, nav, main, article, figure {
+  display: block; 
+}
+
+body {
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "Roboto";
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  display: inline-block;
+}
+
+section {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  opacity: 0;
+  margin: 10px;
+}
+
+.top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.geo {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+h1, h2, h3 {
+  font-family: "Roboto Condensed";
+  font-weight: normal;
+  margin: 10px;
+}
+
+#weather-description {
+  display: inline;
+  margin-left: 10px;
+  vertical-align: 50%;
+  text-transform: capitalize;
+}
+
+h3 {
+  display: inline-block;
+}
+
+.fz25 {
+  font-size: 25px;
+}
+
+#temperature {
+  width: 43px;
+  text-align: right;
+  display: inline-block;
+}
+
+.celsius-fahrenheit {
+  width: 11px;
+  display: inline-block;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #ccc;
+  text-decoration: underline;
+  width: 190px;
+  outline: none;
+}
+
+button:hover {
+  color: #999;
+}
+
+.place {
+  text-transform: capitalize;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border-top-left-radius: 15.5px;
+  border-bottom-left-radius: 15.5px;
+  width: 120px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  outline: none;
+}
+
+input[type="submit"] {
+	margin-top: -1px;
+  padding: 7.5px;
+  border: none;
+  border-top-right-radius: 15.5px;
+  border-bottom-right-radius: 15.5px;
+  outline: none;
+  margin-left: -4px;
+  font-family: "Roboto";
+}
+
+@media only screen and (min-width: 500px) {
+  main {
+    padding: 50px;
+    display: inline-grid;
+    grid-gap: 10px;
+    grid-template-columns: 50% 50%;
+  }
+  
+  section {
+    margin: 0;
+  }
+
+  .top {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .condition {
+    grid-column: 1;
+    grid-row: 2;
+    border-bottom-left-radius: 20px;
+  }
+
+  .geo {
+    grid-column: 2;
+    grid-row: 2;
+    border-bottom-left-radius: 0;
+  }
+}

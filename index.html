@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="utf-8" />
+  <title>Местная погода</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <meta name="description" content="Приложение определяет местоположение и показывает местную погоду: температура, давление, влажность, ветер, время восхода и заката" />
+  <meta name="keywords" content="местная погода, узнать погоду, сколько градусов" />
+  <meta name="author" content="Sergei Kuznetsov" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="weather.png" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+  <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <main>
+    <section class="top">
+      <h1><span class="place"></span>. Местная погода</h1>
+      <img alt="Local weather" id="image" /><h2 id="weather-description"></h2>
+      <br />
+      <h3>Температура: <span class="fz25"><span id="temperature"></span>°<span class="celsius-fahrenheit">C</span></span></h3>
+      <button  id="celsius-fahrenheit">В градусах по Фаренгейту</button>
+    </section>
+    <section class="condition in-b">
+      <p>Давление: <span id="pressure"></span> мм рт.ст.</p>
+      <p>Влажность: <span id="humidity"></span>%</p>
+      <p>Ветер: <span id="wind-direction"></span> <span id="wind"></span> м/с</p>
+      <p>Восход: <span id="sunrise"></span></p>
+      <p>Закат: <span id="sunset"></span></p>
+    </section>
+    <section class="geo in-b">
+      <p>Местоположение: <span class="place"></span>, <span id="country"></span></p>
+      <p>Долгота: <span id="longitude"></span>°</p>
+      <p>Широта: <span id="latitude"></span>°</p>
+      <form onsubmit="return false">
+        <label for="city">Другой город: </label>
+        <input type="text" id="city" name="city" />
+        <input type="submit" value="OK" id="change-city" />
+      </form>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="myscript.js"></script>
+</body>
+</html>
