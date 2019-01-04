@@ -26,25 +26,25 @@ if (navigator.geolocation) {
       let backgroundUrl = "";
       switch (json.weather[0].main) {
         case "Thunderstorm":
-          backgroundUrl = "https://drive.google.com/uc?export=view&id=1Zy6KlHDJNvO-pe6YzbO38ZXW_U2Rvgwy";
+          backgroundUrl = "bg_images/thunderstorm.jpg";
           break;
         case "Drizzle":
-          backgroundUrl = "https://drive.google.com/uc?export=view&id=1TrDg_6PNeQWPmTFnNkvJGvX0mie1sVGs";
+          backgroundUrl = "bg_images/drizzle.jpg";
           break;
         case "Rain":
-          backgroundUrl = "https://drive.google.com/uc?export=view&id=18ui8QtAVAnGWqx7zD_0CAMJou48Loohz";
+          backgroundUrl = "bg_images/rain.jpg";
           break;
         case "Snow":
-          backgroundUrl = "https://drive.google.com/uc?export=view&id=15ZTmvY91AqzXcTobl_2RVtcssrFyQu7W";
+          backgroundUrl = "bg_images/snow.jpg";
           break;
         case "Clear":
-          backgroundUrl = "https://drive.google.com/uc?export=view&id=1Gj7o4NVxoWJF8_JfrouOXskAyxY567Db";
+          backgroundUrl = "bg_images/clear.jpg";
           break;
         case "Clouds":
-          backgroundUrl = "https://drive.google.com/uc?export=view&id=1AoOW9GH4mQovo8gh6krxVJJT44qMjYho";
+          backgroundUrl = "bg_images/clouds.jpg";
           break;
         default:
-          backgroundUrl = "https://drive.google.com/uc?export=view&id=1ODLZdmdtZdF5-NaMPZdKYptCCduTu3qP";
+          backgroundUrl = "bg_images/mist.jpg";
       }
       let backgroundImage = "url(" + backgroundUrl + ")";
       $("body").css("backgroundImage", backgroundImage);
