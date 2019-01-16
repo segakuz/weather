@@ -1,8 +1,8 @@
 transliterate = (
   function() {
     var
-      rus = "щ   ш  ч  ц  ю  я  ё  е  ж  ъ  ы  э  а б в г д е з и й к л м н о п р с т у ф х ь".split(/ +/g),
-      eng = "shh sh ch cz yu ya yo ye zh `` y' e` a b v g d e z i j k l m n o p r s t u f h '".split(/ +/g)
+      rus = "щ   ш  ч  ц  ю  я  ё  е  ый ж  х  ъ  ы  э  а б в г д е з и й й к л м н о п р с т у ф х ь".split(/ +/g),
+      eng = "shh sh ch cz yu ya yo ye yy zh kh `` y' e` a b v g d e z i j y k l m n o p r s t u f h '".split(/ +/g)
     ;
     return function(text, engToRus) {
       text = text.toLowerCase();
