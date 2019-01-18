@@ -16,17 +16,23 @@ body {
   color: white;
   background-size: cover;
   background-position: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 main {
-  display: inline-block;
+  min-height: 100vh;
+  display: inline-grid;
+  grid-gap: 10px;
+  grid-template-columns: 100%;
+  align-content: center;
+  padding: 10px;
 }
 
 section {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 15px;
   opacity: 0;
-  margin: 10px;
 }
 
 .top {
@@ -118,13 +124,7 @@ input[type="submit"] {
 @media only screen and (min-width: 500px) {
   main {
     padding: 50px;
-    display: inline-grid;
-    grid-gap: 10px;
     grid-template-columns: 50% 50%;
-  }
-  
-  section {
-    margin: 0;
   }
 
   .top {
